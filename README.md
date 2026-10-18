@@ -9,7 +9,7 @@ Pasta `projetos/locacao/` do servidor: o app interno de aluguéis e estoque e a 
 
 **Situação:** Fase 0, protótipo visual com dados de exemplo (sem banco, sem login). O relatório está em `docs/relatorio-fase-0.md`.
 
-**Vercel:** só para ver o protótipo no navegador. O projeto do Vercel usa `programa-estoque` como pasta raiz. O app de verdade, com banco e login, roda no servidor próprio (decisões 012 e 013).
+**Vercel:** https://monochroma-locacao.vercel.app, só para ver o protótipo no navegador. O projeto do Vercel usa `programa-estoque` como pasta raiz. O app de verdade, com banco e login, roda no servidor próprio (decisões 012, 013 e 027).
 
 No Mac, a base do banco (`banco/`) e os pilares do robô (`agente/`) ficam nesta mesma pasta e entram neste repositório quando a Fase 1 começar.
 

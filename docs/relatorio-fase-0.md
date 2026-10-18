@@ -6,6 +6,7 @@
 ## Como abrir
 
 - **No computador ou no celular, sem instalar nada:** a página **"Protótipo Monochroma"**, publicada na conta do Alef no Claude (privada até ele compartilhar). Comece pelo índice (menu da foto, no canto de cima → "Índice do protótipo").
+- **No Vercel (endereço próprio, com cadeado):** https://monochroma-locacao.vercel.app (pede login do Vercel, time Facilitta). Ali a câmera do balcão, a impressão e a exportação funcionam, porque a página não fica dentro do Claude.
 - **No Mac:** `programa-estoque/LEIAME.md` explica como rodar (`npm install` e `npm run dev`).
 - O relógio do protótipo está parado em **sexta, 16/10/2026, 10:00**, para as telas baterem com os dados de exemplo.
 - Para ver como a Julia (balcão): menu da foto → "Protótipo: ver como" → Julia Zuqui.
@@ -46,7 +47,7 @@
 - Cor de destaque magenta tirada do logo do Instagram (#C4427F), com tons próprios para link e foco que passam no contraste (decisão 022).
 - Busca de registros e ações com Ctrl/Cmd + K; "?" mostra os atalhos.
 - `docs/modelo.md`: diagrama de entidades do banco `locacao` (o que existe na 001 e 002 e o que as migrações 003 em diante acrescentam).
-- `docs/plano-fase-0.md`, `docs/pendencias.md` e 26 decisões em `docs/decisoes/`.
+- `docs/plano-fase-0.md`, `docs/pendencias.md` e 27 decisões em `docs/decisoes/`.
 - Campo de data próprio, com calendário e hora de 30 em 30 minutos: mostra `dd/mm/aaaa` e 24 horas em qualquer navegador (decisão 026).
 - Os componentes do protótipo são os definitivos: nas próximas fases troca-se só a fonte dos dados.
 
@@ -72,8 +73,8 @@ O resultado completo está em `docs/conferencia-fase-0.json`.
 ## 2. O que não ficou e por quê
 
 - **Nada está ligado de verdade.** Banco, login com Google, robô, InfinitePay, Autentique e Drive entram nas Fases 1 a 3. Todo botão que "grava" só muda a tela e mostra o aviso.
-- **Câmera no balcão:** funciona no app rodando no Mac (endereço local) e, depois, no servidor com cadeado (HTTPS). Na página publicada, a câmera é bloqueada pela própria página; por isso há "Simular leitura" e "Digitar código".
-- **Imprimir e baixar PDF:** na página publicada esses botões não fazem nada (a página não pode abrir a impressão nem baixar arquivos). No app rodando no Mac, "Imprimir" abre a impressão do navegador. Os PDFs de verdade (etiquetas em lote, ordem de locação) são feitos pelo servidor nas Fases 1 e 2.
+- **Câmera no balcão:** funciona no Vercel, no app rodando no Mac e, depois, no servidor com cadeado (HTTPS). Na página publicada no Claude, a câmera é bloqueada; por isso há "Simular leitura" e "Digitar código".
+- **Imprimir, baixar PDF e exportar planilha:** na página publicada no Claude aparecem só como aviso (lá não dá para abrir a impressão nem baixar arquivos). No Vercel e no Mac, "Imprimir" abre a impressão do navegador e "Exportar" baixa a planilha. Os PDFs de verdade (etiquetas em lote, ordem de locação) são feitos pelo servidor nas Fases 1 e 2.
 - **Logo:** redesenhado a partir da imagem do Instagram. Fica provisório até chegar o arquivo original.
 - **Cor "Na rua":** é um rosa próximo do destaque magenta. Passa no contraste e tem forma própria (pílula com ícone), mas, se incomodar, dá para mudar o tom na Fase 1.
 
