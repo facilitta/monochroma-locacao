@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+prototipo/vite/dist/
+testes/fase0/saida/
+*.tsbuildinfo
+.env
+.env.*
+!.env.exemplo

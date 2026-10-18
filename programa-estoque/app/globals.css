@@ -1,0 +1,528 @@
+/* Tokens da Monochroma. Único arquivo do app onde uma cor, um raio ou uma sombra pode ser escrito por extenso.
+   Seções 8.2 e 8.3 do prompt de produção. Visual adaptado de trycompai/crm (MIT). */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@source "../componentes";
+@source "../telas";
+@source "../lib";
+@source "../prototipo";
+@source "../app";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Variantes de estado dos componentes shadcn (copiadas de shadcn/tailwind.css, MIT): o Radix marca data-state. */
+@custom-variant data-open {
+	&:where([data-state="open"]),
+	&:where([data-open]:not([data-open="false"])) {
+		@slot;
+	}
+}
+@custom-variant data-closed {
+	&:where([data-state="closed"]),
+	&:where([data-closed]:not([data-closed="false"])) {
+		@slot;
+	}
+}
+@custom-variant data-checked {
+	&:where([data-state="checked"]),
+	&:where([data-checked]:not([data-checked="false"])) {
+		@slot;
+	}
+}
+@custom-variant data-unchecked {
+	&:where([data-state="unchecked"]),
+	&:where([data-unchecked]:not([data-unchecked="false"])) {
+		@slot;
+	}
+}
+@custom-variant data-selected {
+	&:where([data-selected="true"]) {
+		@slot;
+	}
+}
+@custom-variant data-disabled {
+	&:where([data-disabled="true"]),
+	&:where([data-disabled]:not([data-disabled="false"])) {
+		@slot;
+	}
+}
+@custom-variant data-active {
+	&:where([data-state="active"]),
+	&:where([data-active]:not([data-active="false"])) {
+		@slot;
+	}
+}
+@custom-variant data-horizontal {
+	&:where([data-orientation="horizontal"]) {
+		@slot;
+	}
+}
+@custom-variant data-vertical {
+	&:where([data-orientation="vertical"]) {
+		@slot;
+	}
+}
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+	--card: #ffffff;
+	--card-foreground: #171717;
+	--popover: #ffffff;
+	--popover-foreground: #171717;
+	--muted: #f4f4f4;
+	--muted-foreground: #6b6b6b;
+	--secondary: #f4f4f4;
+	--secondary-foreground: #171717;
+	--accent: #f4f4f4;
+	--accent-foreground: #171717;
+	--border: #e2e2e2;
+	--input: #e2e2e2;
+
+	/* Destaque: magenta do logo da Monochroma (contraste 4,7:1 com branco). Foco e links num tom mais escuro para passar também sobre o cinza. */
+	--primary: #c4427f;
+	--primary-foreground: #ffffff;
+	--primary-hover: color-mix(in oklch, #c4427f, black 12%);
+	--primary-active: color-mix(in oklch, #c4427f, black 22%);
+	--ring: #a8336a;
+	--link: #a8336a;
+
+	/* Logo (redesenho provisório a partir do Instagram) */
+	--logo-fundo: #f5f5f5;
+	--logo-tinta: #1a1a1a;
+	--logo-rosa-claro: #f0b6d6;
+	--logo-rosa-medio: #ea9cc4;
+	--logo-rosa-forte: #c4427f;
+
+	--destructive: #ae2e24;
+	--destructive-foreground: #ffffff;
+	--destructive-hover: color-mix(in oklch, #ae2e24, black 12%);
+	--destructive-active: color-mix(in oklch, #ae2e24, black 22%);
+	--secondary-hover: color-mix(in oklch, #f4f4f4, #171717 5%);
+
+	--overlay: rgba(0, 0, 0, 0.18);
+	--destaque-claro: oklch(from #c4427f 0.955 calc(c * 0.28) h);
+	--sombra-campo: none;
+
+	/* Situação: texto e ícone */
+	--ok: oklch(0.5 0.12 150);
+	--atencao: oklch(0.53 0.13 65);
+	--info: oklch(0.51 0.16 255);
+	--erro: #ae2e24;
+	--neutro: #6b6b6b;
+	/* Situação: base do fundo tingido e da borda */
+	--ok-base: oklch(0.55 0.13 150);
+	--atencao-base: oklch(0.62 0.14 65);
+	--info-base: oklch(0.55 0.16 255);
+	--erro-base: #ae2e24;
+	--neutro-base: #6b6b6b;
+	--tinta-sobre: var(--background);
+
+	/* Série de gráficos */
+	--chart-1: #00915f;
+	--chart-2: #2563eb;
+	--chart-3: #b45309;
+	--chart-4: #7c3aed;
+	--chart-5: #0891b2;
+
+	/* Etapas da reserva (só ponto, faixa e barra) */
+	--etapa-orcamento: #737373;
+	--etapa-pre-reserva: #7c3aed;
+	--etapa-confirmada: #2563eb;
+	--etapa-separada: #0891b2;
+	--etapa-na-rua: #00915f;
+	--etapa-devolvida: #b45309;
+	--etapa-encerrada: #404040;
+	--etapa-fora: #8a8a8a;
+
+	/* Estados da unidade (pílula) */
+	--unidade-livre: #4d7c0f;
+	--unidade-pre-reservada: #4338ca;
+	--unidade-reservada: #4338ca;
+	--unidade-na-rua: #be185d;
+	--unidade-conferencia: #475569;
+	--unidade-reparo: #57534e;
+	--unidade-pendente: #9f1239;
+	--unidade-baixada: #666666;
+
+	/* Sombras: só no que flutua */
+	--sombra-botao: 0 1px 2px rgba(0, 0, 0, 0.04);
+	--sombra-menu: 0 2px 4px -1px rgba(0, 0, 0, 0.08);
+	--sombra-ficha: 0 4px 8px -2px rgba(0, 0, 0, 0.08);
+	--sombra-linha-base: inset 0 -1px 0 var(--border);
+	--brilho-ponto: 0 0 4px currentColor;
+
+	--font-sans: var(--font-geist-sans, "Geist Variable", "Geist", ui-sans-serif, system-ui, sans-serif);
+	--font-mono: var(--font-geist-mono, "Geist Mono Variable", "Geist Mono", ui-monospace, monospace);
+
+	--duracao-entrada: 210ms;
+	--duracao-saida: 150ms;
+	--duracao-deslocamento: 400ms;
+	--duracao-ficha: 300ms;
+	--duracao-menu: 100ms;
+
+	color-scheme: light;
+}
+
+.dark {
+	--background: #0f0f0f;
+	--foreground: #f5f5f5;
+	--card: #171717;
+	--card-foreground: #f5f5f5;
+	--popover: #171717;
+	--popover-foreground: #f5f5f5;
+	--muted: #1f1f1f;
+	--muted-foreground: #a0a0a0;
+	--secondary: #1f1f1f;
+	--secondary-foreground: #f5f5f5;
+	--accent: #292929;
+	--accent-foreground: #f5f5f5;
+	--border: #2a2a2a;
+	--input: #2a2a2a;
+
+	--ring: #ea9cc4;
+	--link: #ea9cc4;
+	--secondary-hover: #292929;
+
+	--overlay: rgba(0, 0, 0, 0.55);
+	--destaque-claro: oklch(from #c4427f 0.3 calc(c * 0.4) h);
+	--sombra-campo: inset 0 1px 1px rgba(0, 0, 0, 0.3);
+
+	--ok: oklch(0.72 0.16 155);
+	--atencao: oklch(0.8 0.15 75);
+	--info: oklch(0.7 0.15 250);
+	--erro: #f07167;
+	--neutro: #a0a0a0;
+	--ok-base: oklch(0.72 0.16 155);
+	--atencao-base: oklch(0.8 0.15 75);
+	--info-base: oklch(0.7 0.15 250);
+	--erro-base: #f07167;
+	--neutro-base: #a0a0a0;
+	--tinta-sobre: var(--card);
+
+	--chart-1: #0fa871;
+	--chart-2: #4b87f0;
+	--chart-3: #c07e22;
+	--chart-4: #9b7bf0;
+	--chart-5: #1e93b8;
+
+	--etapa-orcamento: #a3a3a3;
+	--etapa-pre-reserva: #9b7bf0;
+	--etapa-confirmada: #4b87f0;
+	--etapa-separada: #1e93b8;
+	--etapa-na-rua: #0fa871;
+	--etapa-devolvida: #c07e22;
+	--etapa-encerrada: #d4d4d4;
+	--etapa-fora: #6b6b6b;
+
+	--unidade-livre: #a3e635;
+	--unidade-pre-reservada: #a5b4fc;
+	--unidade-reservada: #a5b4fc;
+	--unidade-na-rua: #f9a8d4;
+	--unidade-conferencia: #cbd5e1;
+	--unidade-reparo: #d6d3d1;
+	--unidade-pendente: #fda4af;
+	--unidade-baixada: #8a8a8a;
+
+	color-scheme: dark;
+}
+
+@theme inline {
+	--color-*: initial;
+	--radius-*: initial;
+	--shadow-*: initial;
+	--inset-shadow-*: initial;
+	--drop-shadow-*: initial;
+
+	--color-transparent: transparent;
+	--color-current: currentColor;
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-secondary-hover: var(--secondary-hover);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-primary-hover: var(--primary-hover);
+	--color-primary-active: var(--primary-active);
+	--color-ring: var(--ring);
+	--color-link: var(--link);
+	--color-destructive: var(--destructive);
+	--color-destructive-foreground: var(--destructive-foreground);
+	--color-destructive-hover: var(--destructive-hover);
+	--color-destructive-active: var(--destructive-active);
+	--color-overlay: var(--overlay);
+	--color-destaque-claro: var(--destaque-claro);
+
+	--color-ok: var(--ok);
+	--color-atencao: var(--atencao);
+	--color-info: var(--info);
+	--color-erro: var(--erro);
+	--color-neutro: var(--neutro);
+	--color-ok-fundo: color-mix(in oklch, var(--ok-base) 12%, var(--tinta-sobre));
+	--color-atencao-fundo: color-mix(in oklch, var(--atencao-base) 12%, var(--tinta-sobre));
+	--color-info-fundo: color-mix(in oklch, var(--info-base) 12%, var(--tinta-sobre));
+	--color-erro-fundo: color-mix(in oklch, var(--erro-base) 12%, var(--tinta-sobre));
+	--color-neutro-fundo: color-mix(in oklch, var(--neutro-base) 12%, var(--tinta-sobre));
+	--color-ok-borda: color-mix(in oklch, var(--ok-base) 40%, var(--tinta-sobre));
+	--color-atencao-borda: color-mix(in oklch, var(--atencao-base) 40%, var(--tinta-sobre));
+	--color-info-borda: color-mix(in oklch, var(--info-base) 40%, var(--tinta-sobre));
+	--color-erro-borda: color-mix(in oklch, var(--erro-base) 40%, var(--tinta-sobre));
+	--color-neutro-borda: color-mix(in oklch, var(--neutro-base) 40%, var(--tinta-sobre));
+
+	--color-chart-1: var(--chart-1);
+	--color-chart-2: var(--chart-2);
+	--color-chart-3: var(--chart-3);
+	--color-chart-4: var(--chart-4);
+	--color-chart-5: var(--chart-5);
+
+	--color-etapa-orcamento: var(--etapa-orcamento);
+	--color-etapa-pre-reserva: var(--etapa-pre-reserva);
+	--color-etapa-confirmada: var(--etapa-confirmada);
+	--color-etapa-separada: var(--etapa-separada);
+	--color-etapa-na-rua: var(--etapa-na-rua);
+	--color-etapa-devolvida: var(--etapa-devolvida);
+	--color-etapa-encerrada: var(--etapa-encerrada);
+	--color-etapa-fora: var(--etapa-fora);
+
+	--color-unidade-livre: var(--unidade-livre);
+	--color-unidade-pre-reservada: var(--unidade-pre-reservada);
+	--color-unidade-reservada: var(--unidade-reservada);
+	--color-unidade-na-rua: var(--unidade-na-rua);
+	--color-unidade-conferencia: var(--unidade-conferencia);
+	--color-unidade-reparo: var(--unidade-reparo);
+	--color-unidade-pendente: var(--unidade-pendente);
+	--color-unidade-baixada: var(--unidade-baixada);
+	--color-unidade-na-rua-fundo: color-mix(in oklch, var(--unidade-na-rua) 12%, var(--tinta-sobre));
+
+	--color-logo-fundo: var(--logo-fundo);
+	--color-logo-tinta: var(--logo-tinta);
+	--color-logo-rosa-claro: var(--logo-rosa-claro);
+	--color-logo-rosa-medio: var(--logo-rosa-medio);
+	--color-logo-rosa-forte: var(--logo-rosa-forte);
+
+	--radius-sm: 4px;
+	--radius-md: 5px;
+	--radius-lg: 8px;
+	--radius-full: 9999px;
+
+	--shadow-2xs: var(--sombra-botao);
+	--shadow-xs: var(--sombra-botao);
+	--shadow-md: var(--sombra-menu);
+	--shadow-lg: var(--sombra-ficha);
+	--shadow-linha: var(--sombra-linha-base);
+	--shadow-campo: var(--sombra-campo);
+	--shadow-brilho: var(--brilho-ponto);
+
+	--text-2xs: 11px;
+	--text-2xs--line-height: 16px;
+
+	--font-sans: var(--font-sans);
+	--font-mono: var(--font-mono);
+
+	--spacing-trilho: 72px;
+	--spacing-cabecalho: 48px;
+	--spacing-barra-inferior: 56px;
+	--container-pagina: 1280px;
+
+	--animate-girar: girar 1.4s linear infinite;
+	--animate-piscar-ok: piscar-ok 900ms ease-out;
+}
+
+@keyframes girar {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes piscar-ok {
+	0% {
+		background-color: var(--color-ok-fundo);
+	}
+	100% {
+		background-color: transparent;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+	html {
+		-webkit-text-size-adjust: 100%;
+	}
+	body {
+		@apply bg-background text-foreground font-sans antialiased;
+		font-feature-settings: "tnum" 0;
+	}
+	.tabular-nums,
+	[data-numero] {
+		font-variant-numeric: tabular-nums;
+	}
+	* {
+		scrollbar-width: thin;
+		scrollbar-color: var(--border) transparent;
+	}
+	:focus-visible {
+		outline: 2px solid var(--ring);
+		outline-offset: 2px;
+	}
+	[data-texto-maior="sim"] {
+		--texto-interface: 14px;
+	}
+}
+
+/* Opção "Texto maior": interface em 14 px e linhas de 48 px */
+[data-texto-maior="sim"] .texto-interface,
+[data-texto-maior="sim"] [data-slot="table-cell"],
+[data-texto-maior="sim"] [data-slot="table-head"] {
+	font-size: 14px;
+}
+[data-texto-maior="sim"] [data-slot="table-row"] {
+	height: 48px;
+}
+
+/* Celular: alvos de toque de 44 px e campos de 16 px */
+@media (max-width: 767px) {
+	button:not([role="switch"]):not([role="checkbox"]):not([role="radio"]):not([data-isento-alvo]),
+	[role="button"],
+	[role="tab"],
+	[role="menuitem"],
+	[role="menuitemradio"],
+	[role="menuitemcheckbox"],
+	[role="option"],
+	[data-slot="button"],
+	[data-slot="tabs-trigger"],
+	[data-slot="toggle-group-item"],
+	[data-slot="switch-alvo"],
+	[data-slot="select-trigger"],
+	[data-slot="dropdown-menu-item"],
+	[data-slot="dropdown-menu-trigger"],
+	[data-slot="popover-trigger"],
+	[data-alvo] {
+		min-height: 44px;
+		min-width: 44px;
+	}
+	[data-slot="tabs-list"] {
+		height: auto !important;
+	}
+	input,
+	select,
+	textarea,
+	[data-slot="input"],
+	[data-slot="textarea"],
+	[data-slot="select-trigger"] {
+		font-size: 16px !important;
+		min-height: 44px;
+	}
+}
+
+/* Balcão: alvos de 48 px e texto de 16 px em qualquer largura */
+[data-balcao] button:not([role="switch"]):not([role="checkbox"]):not([role="radio"]),
+[data-balcao] [role="button"],
+[data-balcao] [data-slot="button"],
+[data-balcao] [data-alvo] {
+	min-height: 48px !important;
+	min-width: 48px !important;
+}
+[data-balcao] {
+	font-size: 16px;
+}
+[data-balcao] [data-slot="button"],
+[data-balcao] [data-slot="etapa"],
+[data-balcao] [data-slot="selo"] {
+	font-size: 16px;
+}
+[data-balcao] [data-slot="selo"] {
+	height: auto;
+	padding-block: 2px;
+}
+
+/* Movimento de ícones ao passar o mouse (trycompai/crm) */
+@layer utilities {
+	.cds-icon {
+		transform-origin: center;
+	}
+	@media (prefers-reduced-motion: no-preference) {
+		.cds-icon {
+			transition: transform 240ms cubic-bezier(0.34, 1.56, 0.64, 1);
+		}
+		.cds-icon[data-motion="pop"] {
+			--cds-hover: scale(1.14);
+		}
+		.cds-icon[data-motion="turn"] {
+			--cds-hover: rotate(90deg);
+		}
+		.cds-icon[data-motion="nudge-right"] {
+			--cds-hover: translateX(3px);
+		}
+		.cds-icon[data-motion="nudge-left"] {
+			--cds-hover: translateX(-3px);
+		}
+		.cds-icon[data-motion="nudge-down"] {
+			--cds-hover: translateY(3px);
+		}
+		.cds-icon[data-motion="none"] {
+			--cds-hover: none;
+		}
+		:where(.cds-icon:hover, :where(button, a, [role="button"], [role="menuitem"]):hover .cds-icon) {
+			transform: var(--cds-hover, none);
+		}
+	}
+}
+
+/* Altura da tela inteira do app (no arquivo único publicado, 100% do quadro) */
+.altura-tela {
+	height: 100dvh;
+}
+
+/* Hachurado de reparo (agenda e pílula) */
+.hachurado {
+	background-image: repeating-linear-gradient(
+		135deg,
+		color-mix(in oklch, var(--unidade-reparo) 22%, transparent) 0 2px,
+		transparent 2px 7px
+	);
+}
+.hachurado-leve {
+	background-image: repeating-linear-gradient(
+		135deg,
+		color-mix(in oklch, var(--unidade-reparo) 14%, transparent) 0 2px,
+		transparent 2px 6px
+	);
+}
+
+/* Escala de cinza para conferência da linguagem visual */
+.escala-de-cinza {
+	filter: grayscale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+@media print {
+	[data-nao-imprimir] {
+		display: none !important;
+	}
+	body {
+		background: #ffffff;
+	}
+}

@@ -1,0 +1,70 @@
+// Adaptado de trycompai/crm (MIT)
+"use client";
+
+import ChevronLeft from "@carbon/icons-react/es/ChevronLeft";
+import ChevronRight from "@carbon/icons-react/es/ChevronRight";
+import { Button } from "@/componentes/ui/button";
+import { Spinner } from "@/componentes/ui/spinner";
+import type { ReactNode } from "react";
+
+const numberFormat = new Intl.NumberFormat("pt-BR");
+
+export function TablePagination({
+	page,
+	totalPages,
+	pageSize,
+	total,
+	onPageChange,
+	loading = false,
+	meta,
+}: {
+	page: number;
+	totalPages: number;
+	pageSize: number;
+	total: number;
+	onPageChange: (page: number) => void;
+	loading?: boolean;
+	meta?: ReactNode;
+}) {
+	const rangeStart = total === 0 ? 0 : (page - 1) * pageSize + 1;
+	const rangeEnd = Math.min(page * pageSize, total);
+
+	return (
+		<div className="flex shrink-0 flex-wrap items-center justify-between gap-3">
+			<span className="flex items-center gap-2 text-muted-foreground text-xs tabular-nums">
+				{loading && <Spinner />}
+				{meta ??
+					(total === 0
+						? "Nenhum resultado"
+						: `Mostrando ${numberFormat.format(rangeStart)}–${numberFormat.format(
+								rangeEnd,
+							)} de ${numberFormat.format(total)}`)}
+			</span>
+			{totalPages > 1 && (
+				<div className="flex items-center gap-2">
+					<Button
+						variant="ghost"
+						size="sm"
+						disabled={page <= 1}
+						onClick={() => onPageChange(Math.max(1, page - 1))}
+					>
+						<ChevronLeft data-icon="inline-start" />
+						Anterior
+					</Button>
+					<span className="text-muted-foreground text-xs tabular-nums">
+						{page} / {totalPages}
+					</span>
+					<Button
+						variant="ghost"
+						size="sm"
+						disabled={page >= totalPages}
+						onClick={() => onPageChange(page + 1)}
+					>
+						Próxima
+						<ChevronRight data-icon="inline-end" />
+					</Button>
+				</div>
+			)}
+		</div>
+	);
+}

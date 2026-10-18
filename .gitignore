@@ -1,0 +1,16 @@
+# Dependências e saídas de build
+node_modules/
+.next/
+out/
+programa-estoque/prototipo/vite/dist/
+programa-estoque/testes/fase0/saida/
+*.tsbuildinfo
+.vercel/
+
+# Segredos: nunca no Git
+.env
+.env.*
+!.env.exemplo
+
+# Sistema
+.DS_Store

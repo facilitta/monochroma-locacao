@@ -1,0 +1,1366 @@
+{
+  "inicio": "2026-10-18T22:00:18.828Z",
+  "base": "http://127.0.0.1:4173/",
+  "capturas": [
+    {
+      "nome": "hoje",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/hoje-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "hoje",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/hoje-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "hoje",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/hoje-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "hoje",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/hoje-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "conversas",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/conversas-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "conversas",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/conversas-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "conversas",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/conversas-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "conversas",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/conversas-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "reservas",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/reservas-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "reservas",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/reservas-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "reservas",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/reservas-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "reservas",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/reservas-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-reserva",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/ficha-reserva-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-reserva",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/ficha-reserva-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-reserva",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/ficha-reserva-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-reserva",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/ficha-reserva-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "clientes",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/clientes-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "clientes",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/clientes-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "clientes",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/clientes-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "clientes",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/clientes-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-cliente",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/ficha-cliente-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-cliente",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/ficha-cliente-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-cliente",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/ficha-cliente-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-cliente",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/ficha-cliente-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "pagamentos",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/pagamentos-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "pagamentos",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/pagamentos-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "pagamentos",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/pagamentos-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "pagamentos",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/pagamentos-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "paineis",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/paineis-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "paineis",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/paineis-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "paineis",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/paineis-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "paineis",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/paineis-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "automacoes",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/automacoes-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "automacoes",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/automacoes-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "automacoes",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/automacoes-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "automacoes",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/automacoes-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "configuracoes",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/configuracoes-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "configuracoes",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/configuracoes-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "configuracoes",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/configuracoes-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "configuracoes",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/configuracoes-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "catalogo",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/catalogo-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "catalogo",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/catalogo-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "catalogo",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/catalogo-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "catalogo",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/catalogo-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-equipamento",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/ficha-equipamento-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-equipamento",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/ficha-equipamento-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-equipamento",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/ficha-equipamento-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "ficha-equipamento",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/ficha-equipamento-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "unidades",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/unidades-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "unidades",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/unidades-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "unidades",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/unidades-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "unidades",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/unidades-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "kits",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/kits-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "kits",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/kits-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "kits",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/kits-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "kits",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/kits-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "agenda",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/agenda-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "agenda",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/agenda-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "agenda",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/agenda-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "agenda",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/agenda-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "montador",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/montador-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "montador",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/montador-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "montador",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/montador-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "montador",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/montador-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "balcao",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/balcao-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "balcao",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/balcao-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 48
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "balcao",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/balcao-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "balcao",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/balcao-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 48
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "manutencao",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/manutencao-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "manutencao",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/manutencao-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "manutencao",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/manutencao-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "manutencao",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/manutencao-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "etiquetas",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/etiquetas-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "etiquetas",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/etiquetas-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "etiquetas",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/etiquetas-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "etiquetas",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/etiquetas-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "alertas",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/alertas-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "alertas",
+      "tema": "claro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/alertas-claro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "alertas",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/alertas-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "alertas",
+      "tema": "escuro",
+      "largura": 390,
+      "arquivo": "capturas/fase-0/alertas-escuro-390.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": {
+        "pequenos": [],
+        "campos": [],
+        "rolagem": false,
+        "alvoMin": 44
+      },
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "linguagem-visual",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/linguagem-visual-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "linguagem-visual",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/linguagem-visual-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "papeis",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/papeis-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "papeis",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/papeis-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "prototipo",
+      "tema": "claro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/prototipo-claro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    },
+    {
+      "nome": "prototipo",
+      "tema": "escuro",
+      "largura": 1440,
+      "arquivo": "capturas/fase-0/prototipo-escuro-1440.png",
+      "erros": [],
+      "contraste": [],
+      "outras": [],
+      "medidas": null,
+      "proibidas": [],
+      "cruas": []
+    }
+  ],
+  "balcao": [
+    {
+      "nome": "hoje",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "conversas",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "reservas",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "ficha-reserva",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "clientes",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "ficha-cliente",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "pagamentos",
+      "bloqueada": true,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "paineis",
+      "bloqueada": true,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "automacoes",
+      "bloqueada": true,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "configuracoes",
+      "bloqueada": true,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "catalogo",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "ficha-equipamento",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "unidades",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "kits",
+      "bloqueada": true,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "agenda",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "montador",
+      "bloqueada": true,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "balcao",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "manutencao",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "etiquetas",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    },
+    {
+      "nome": "alertas",
+      "bloqueada": false,
+      "dinheiro": [],
+      "trilhoTemFinanceiro": false
+    }
+  ],
+  "tokens": [],
+  "escalaDeCinza": {
+    "arquivo": "capturas/fase-0/linguagem-visual-escala-de-cinza-1440.png",
+    "marcadoresSemFormaOuTexto": 0
+  },
+  "fim": "2026-10-18T22:04:01.967Z"
+}
